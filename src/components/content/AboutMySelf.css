@@ -1,0 +1,16 @@
+.about-container {
+    max-width: 548px;
+    transition: .3s ease-in-out;
+}
+
+.about-container h2 {
+    color: #79A8AF;
+}
+
+.about-container p {
+    color: #CBCBCB;
+}
+
+.aboutPhoto {
+    width: 400px;
+}

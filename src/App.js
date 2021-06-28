@@ -1,14 +1,17 @@
 import './App.css';
 
 import MyNavbar from './components/navbar/MyNavBar';
+import Header from './components/content/Header';
+import AboutMySelf from './components/content/AboutMySelf';
+import WorkedExperience from './components/content/WorkedExperience';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-color">
       <MyNavbar />
-      <header className="App-header">
-        <h3>Let's change the world</h3>
-      </header>
+      <Header />
+      <AboutMySelf />
+      <WorkedExperience />
     </div>
   );
 }
