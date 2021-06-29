@@ -4,6 +4,9 @@ import MyNavbar from './components/navbar/MyNavBar';
 import Header from './components/content/Header';
 import AboutMySelf from './components/content/AboutMySelf';
 import WorkedExperience from './components/content/WorkedExperience';
+import SkillsList from './components/content/SkillsList';
+import ProjectBuilt from './components/content/ProjectBuilt';
+import ContactMe from './components/content/ContactMe';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Header />
       <AboutMySelf />
       <WorkedExperience />
+      <SkillsList />
+      <ProjectBuilt />
+      <ContactMe />
     </div>
   );
 }

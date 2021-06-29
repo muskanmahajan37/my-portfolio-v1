@@ -6,33 +6,9 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 import './MyNavBar.css'
 
 const MyNavbar = () => {
-    const [prevScrollPos, setPrevScrollPos] = useState(0); 
-  const [visible, setVisible] = useState(true);  
-
-  const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-    setPrevScrollPos(currentScrollPos);
-  }, 100);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-
-  }, [prevScrollPos, visible, handleScroll]);
-
-  const navbarStyles = {
-    position: 'fixed',
-    height: '60px',
-    width: '100%',
-    backgroundColor: '#000',
-    textAlign: 'center',
-    transition: 'top 0.6s' 
-  }
 
     return (
-        <Navbar style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className="nav-bg" variant="dark" expand="lg">
+        <Navbar className="nav-bg" variant="dark" expand="lg">
             <Container className="justify-content-between" >
                 <Navbar.Brand href="#">Christian Lumapay</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
