@@ -8,8 +8,8 @@ export default function ProjectBuilt() {
     const clickHandler = () => setShowResults(true)
         
     return (
-        <Container style={{padding: "0 0 200px"}}>
-            <h2 className="text-center" style={{ color: "#79A8AF" }}>Project I've Built</h2>
+        <Container style={{padding: "0 0 200px"}} id="project">
+            <h2 className="text-center" style={{ color: "#216869", fontWeight: "700" }}>Project I've Built</h2>
             <div className="card-list">
                 <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>

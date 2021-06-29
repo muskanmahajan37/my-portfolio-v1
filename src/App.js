@@ -7,6 +7,7 @@ import WorkedExperience from './components/content/WorkedExperience';
 import SkillsList from './components/content/SkillsList';
 import ProjectBuilt from './components/content/ProjectBuilt';
 import ContactMe from './components/content/ContactMe';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <SkillsList />
       <ProjectBuilt />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

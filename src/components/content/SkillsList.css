@@ -8,7 +8,8 @@
 
 .wrapper h1 {
     font-size: 32px;
-    color: #79A8AF;
+    font-weight: 700;
+    color: #216869;
     align-self: center;
     padding-left: 26px;
 }
@@ -48,6 +49,10 @@
 
 .skills-nav {
     display: flex;
+}
+
+.skills-nav h2 {
+    font-size: 18px;
 }
 
 .frontEndText, .backEndText, .designText, .othersText {

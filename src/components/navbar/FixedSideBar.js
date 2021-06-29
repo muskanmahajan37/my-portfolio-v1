@@ -13,19 +13,18 @@ const FixedSideBar = () => {
                 <img className="fixed-left-line" src={fixedLine} alt="" />
                 <div className="fixed-left-sm">
                     <div>
-                        <img className="my-4 linkedin" src={linkedin} alt="" />
+                    <a href="https://www.linkedin.com/in/christian-virtual-assistant/" target="_blank"><img className="my-4 linkedin" src={linkedin} alt="" /></a>
                     </div>
                     <div>
-                        <img className="my-4 twitter" src={twitter} alt="" />
+                    <a href="https://twitter.com/c_lumapay30" target="_blank"><img className="my-4 twitter" src={twitter} alt="" /></a>
                     </div>
                     <div>
-                        <img className="my-4 github" src={github} alt="" />
+                    <a href="https://github.com/clumapay30" target="_blank"><img className="my-4 github" src={github} alt="" /></a>
+                    </div>
+                    <div>
+                        <button className="resume-btn">Resume</button>
                     </div>
                 </div>
-            </div>
-            <div>
-                <img className="fixed-right-line" src={fixedLine} alt="" />
-                <button className="resume-btn">Resume</button>
             </div>
         </div>
     )

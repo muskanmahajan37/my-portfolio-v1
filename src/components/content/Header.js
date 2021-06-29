@@ -14,7 +14,7 @@ const Header = () => {
                 <div className="d-flex flex-wrap justify-content-center align-items-center">
                     <div>
                         <p style={{ color: '#CBCBCB' }}>Hello,</p>
-                        <h1 style={{ color: '#79A8AF' }}>I'm Christian Lumapay</h1>
+                        <h1 style={{ color: '#FFFFFF' }}>I'm Christian Lumapay</h1>
                         <div className="d-flex">
                             <p style={{ color: '#CBCBCB' }}>Web Developer | Web Designer</p>
                             <button className="mx-3 hire-btn">Hire me</button>

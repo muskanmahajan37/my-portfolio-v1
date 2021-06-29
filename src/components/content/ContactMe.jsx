@@ -16,64 +16,34 @@ export default function ContactMe() {
     };
 
     return (
-        <Container>
+        <Container id="contact">
             <div>
-                <h2 className="text-center" style={{ color: "#79A8AF" }}>Contact me</h2>
+                <h2 className="text-center" style={{ color: "#216869", fontWeight: "700" }}>Contact me</h2>
                 <div className="contact-wrapper">
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Row className="mb-3">
-                            <Col lg={12} md={12}>
-                                <Form.Group className="mb-3" as={Col} controlId="validationCustom01">
-                                    <Form.Label className="form-text">Name</Form.Label>
-                                    <Form.Control
-                                        required
-                                        type="text"
-                                        placeholder="Christian Lumapay"
-                                        defaultValue=""
-                                    />
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Form.Group className="mb-3" as={Col} md="12" controlId="validationCustom02">
-                                <Form.Label className="form-text">Email</Form.Label>
-                                <Form.Control
-                                    required
-                                    type="email"
-                                    placeholder="your-email@email.com"
-                                    defaultValue=""
-                                />
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                            </Form.Group>
-                        </Row>
-                        <Row>
-                            <Form.Group className="mb-3" as={Col} md="12" controlId="validationCustomUsername">
-                                <Form.Label className="form-text">Message</Form.Label>
-                                <InputGroup hasValidation>
-                                    <Form.Control
-                                        required
-                                        as="textarea"
-                                        placeholder="Leave a comment here"
-                                        style={{ height: '100px' }}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        Please don't forget the message.
-                                    </Form.Control.Feedback>
-                                </InputGroup>
-                            </Form.Group>
-                        </Row>
-                        <Form.Group className="mb-4">
-                            <Form.Check
-                                required
-                                label="You must check before submitting"
-                                feedback="You must check before submitting"
-                            />
-                        </Form.Group>
-                        <Button type="submit">Submit form</Button>
-                    </Form>
+                    <form noValidate validated={validated} onSubmit={handleSubmit}>
+                        <div className="form-wrapper">
+                            <div className="form-left">
+                                <div className="form-align mb-3">
+                                    <label for="name" className="form-text label">Name</label>
+                                    <input type="text" id="name" name="name" required />
+                                </div>
+                                <div className="form-align mb-3">
+                                    <label for="email" className="form-text label">Email</label>
+                                    <input type="email" id="email" name="email" required />
+                                </div>
+                            </div>
+                            <div className="form-align form-right mb-3">
+                                <label for="textarea" className="form-text label">Message</label>
+                                <textarea name="textarea" id="textarea" cols="30" rows="10" required></textarea>
+                            </div>
+
+                        </div>
+                        <div>
+                            <Button type="submit" id="button">Submit form</Button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </Container>
+        </Container >
     )
 }
