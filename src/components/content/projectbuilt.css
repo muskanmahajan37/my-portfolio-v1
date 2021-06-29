@@ -25,3 +25,11 @@
     display: none;
     transition: .3s ease-in-out;
 }
+
+.githubBtn {
+    transition: .3s ease-in-out;
+}
+
+.githubBtn:hover {
+    transform: translateX(3px);
+}

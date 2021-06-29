@@ -17,7 +17,7 @@ const Header = () => {
                         <h1 style={{ color: '#FFFFFF' }}>I'm Christian Lumapay</h1>
                         <div className="d-flex">
                             <p style={{ color: '#CBCBCB' }}>Web Developer | Web Designer</p>
-                            <button className="mx-3 hire-btn">Hire me</button>
+                            <a href="#contact"><button className="mx-3 hire-btn">Hire me</button></a>
                         </div>
                     </div>
                     <div>

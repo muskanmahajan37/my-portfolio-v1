@@ -36,18 +36,18 @@
     width: 360px;
     height: 148px;
     background: #F1F9FF 0% 0% no-repeat padding-box;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     border-radius: 10px;
     opacity: 1;
 }
 
 #button {
     margin-left: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #000000;
     color: #fff;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 20px;
     transition: .3s ease-in;
 }
 

@@ -10,7 +10,7 @@
     opacity: 1;
     color: #CBCBCB;
     transition: .2s ease-in-out;
-    padding: 0 16px;
+    padding: 5px 16px;
 }
 
 .hire-btn:hover {

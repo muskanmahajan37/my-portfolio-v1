@@ -39,7 +39,7 @@ export default function ContactMe() {
 
                         </div>
                         <div>
-                            <Button type="submit" id="button">Submit form</Button>
+                            <Button type="submit" id="button">Submit</Button>
                         </div>
                     </form>
                 </div>

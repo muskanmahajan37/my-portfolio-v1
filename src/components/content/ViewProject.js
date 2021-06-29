@@ -8,7 +8,7 @@ const ViewProject = () => {
         <div className="d-flex align-items-center" style={{padding: '150px 0 0 0'}}>
             <img src={vpline} alt="line" width="85" height="1" />
             <p style={{color: '#CBCBCB'}} className="mx-3 mt-2">View Project</p>
-            <img src={darrow} alt="arrow" className="downArrow"/>
+            <a href="#project"><img src={darrow} alt="arrow" className="downArrow"/></a>
         </div>
     )
 }
