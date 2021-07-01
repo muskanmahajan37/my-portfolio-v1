@@ -7,7 +7,7 @@ import myResume from '../../utilities/myResume.pdf';
 
 const FixedSideBar = () => {
     return (
-        <div className="test">
+        <div className="fixed-wrapper">
             <img className="fixed-left-line" src={github} alt="" />
             <div className="social-container">
                 <img className="fixed-left-line" src={fixedLine} alt="" />
@@ -24,10 +24,10 @@ const FixedSideBar = () => {
                     <div>
                         <a href={myResume} target="_blank"><button className="resume-btn">Resume</button></a>
                     </div>
-                    </div>
                 </div>
             </div>
-            )
+        </div>
+    )
 }
 
-            export default FixedSideBar;
+export default FixedSideBar;

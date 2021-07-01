@@ -1,9 +1,9 @@
 .card-list {
     padding: 42px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     transition: .6s ease-in-out;
-    
 }
 
 .project-card {

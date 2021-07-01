@@ -9,7 +9,7 @@ import FixedSideBar from '../navbar/FixedSideBar'
 const Header = () => {
     return (
             
-            <Container className="hero-header mt-5">
+            <Container className="hero-header mt-5" id="home">
                 <FixedSideBar />
                 <div className="d-flex flex-wrap justify-content-center align-items-center">
                     <div>

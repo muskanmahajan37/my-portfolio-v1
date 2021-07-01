@@ -11,7 +11,7 @@ export default function ProjectBuilt() {
         <Container style={{ padding: "0 0 200px" }} id="project">
             <h2 className="text-center" style={{ color: "#216869", fontWeight: "700" }}>Project I've Built</h2>
             <div className="card-list">
-                <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
+                <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>
                         <Card.Title>Client's Portfolio</Card.Title>
                         <Card.Text>
@@ -20,7 +20,7 @@ export default function ProjectBuilt() {
                         <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/camille-v2-nodejs" target="_blank"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
+                <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>
                         <Card.Title>Todo List</Card.Title>
                         <Card.Text>
@@ -29,7 +29,7 @@ export default function ProjectBuilt() {
                         <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/todo-list-v2" target="_blank"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
+                <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>
                         <Card.Title>Expand Card</Card.Title>
                         <Card.Text>
@@ -41,7 +41,7 @@ export default function ProjectBuilt() {
             </div>
             <h1 className={`see-more ${showResults ? "show-more-inactive" : ""}`} onClick={clickHandler}>See more...</h1>
             <div className={`card-list  ${!showResults ? "show-more-inactive" : ""}`}>
-                <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
+                <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>
                         <Card.Title>Calculator</Card.Title>
                         <Card.Text>
@@ -50,7 +50,7 @@ export default function ProjectBuilt() {
                         <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/calculator" target="_blank"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
+                <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>
                         <Card.Title>Loading page</Card.Title>
                         <Card.Text>
@@ -59,7 +59,7 @@ export default function ProjectBuilt() {
                         <Button variant="dark" className="githubBtn"><a href="https://github.com/clumapay30/loading-page" target="_blank"><img src={githubLogo} alt="" /></a></Button>
                     </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem', cursor: 'nesw-resize' }}>
+                <Card className="my-3" style={{ width: '18rem', cursor: 'nesw-resize' }}>
                     <Card.Body>
                         <Card.Title>Nature Camp / from Udemy</Card.Title>
                         <Card.Text>

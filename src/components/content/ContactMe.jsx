@@ -19,7 +19,7 @@ export default function ContactMe() {
     const textInputIsvalid = !enteredTextIsValid && enteredTextTouched;
 
     let formIsValid = false;
-    if(enteredNameIsValid && enteredEmailIsValid && enteredTextIsValid) {
+    if (enteredNameIsValid || enteredEmailIsValid || enteredTextIsValid) {
         formIsValid = true
     }
 
@@ -52,24 +52,20 @@ export default function ContactMe() {
         setEnteredNameTouched(true)
         setEnteredEmailTouched(true)
         setEnteredTextTouched(true)
-        if (!enteredNameIsValid && !enteredEmailIsValid && !enteredTextIsValid) {
+        if (!enteredNameIsValid || !enteredEmailIsValid || !enteredTextIsValid) {
             return;
         } else {
             sendEmail()
         }
 
         setEnteredName('')
-        setEnteredEmail('')
-        setEnteredText('')
-
         setEnteredNameTouched(false)
+        setEnteredEmail('')
         setEnteredEmailTouched(false)
+        setEnteredText('')
         setEnteredTextTouched(false)
     }
 
-    const nameInputClasses = nameInputIsvalid
-        ? 'form-align mb-3 invalid'
-        : 'form-align mb-3';
 
     function sendEmail() {
         window.Email.send({
@@ -79,9 +75,13 @@ export default function ContactMe() {
             Subject: `Looking for VA - ${enteredName}`,
             Body: `<b>Name:</b> ${enteredName} <br/><b>Email:</b> ${enteredEmail} NOTE: Please reply to this email. <br/><br/> <b>Message:</b> <br/>${enteredText}`
         }).then(
-            name => alert(`Hi there, your message has been sent!`)
+            name => alert(`Hi ${enteredName}, your message has been sent!`)
         )
     };
+
+    const nameInputClass = nameInputIsvalid ? 'form-align mb-3 invalidName' : 'form-align mb-3';
+    const emailInputClass = emailInputIsvalid ? 'form-align mb-3 invalidEmail' : 'form-align mb-3';
+    const textInputClass = textInputIsvalid ? 'form-align form-right mb-3 invalidmessage' : 'form-align form-right mb-3';
 
     return (
         <Container id="contact">
@@ -91,38 +91,41 @@ export default function ContactMe() {
                     <form className="contact-form" onSubmit={formSubmissionHandler}>
                         <div className="form-wrapper">
                             <div className="form-left">
-                                <div className={nameInputClasses}>
+                                <div className={nameInputClass}>
                                     <label htmlFor="name" className="form-text label">Name</label>
-                                    <input  type="text" 
-                                            className="name" 
-                                            id="name" 
-                                            onChange={nameInputChangeHandler}
-                                            onBlur={nameInputBlurHandler} />
+                                    <input type="text"
+                                        className="name"
+                                        id="name"
+                                        onChange={nameInputChangeHandler}
+                                        onBlur={nameInputBlurHandler} />
+                                    {nameInputIsvalid && <p className="text-error">Name must not be empty.</p>}
                                 </div>
-                                <div className={nameInputClasses}>
+                                <div className={emailInputClass}>
                                     <label htmlFor="email" className="form-text label">Email</label>
-                                    <input  type="email" 
-                                            className="email" 
-                                            id="email" 
-                                            onChange={emailInputChangeHandler}
-                                            onBlur={emailnputBlurHandler}/>
+                                    <input type="email"
+                                        className="email"
+                                        id="email"
+                                        onChange={emailInputChangeHandler}
+                                        onBlur={emailnputBlurHandler} />
+                                    {emailInputIsvalid && <p className="text-error">Email must be correct or must not be empty.</p>}
                                 </div>
                             </div>
-                            <div className="form-align form-right mb-3">
+                            <div className={textInputClass}>
                                 <label htmlFor="textarea" className="form-text label">Message</label>
-                                <textarea   type="textarea" 
-                                            className="message" 
-                                            id="textarea" 
-                                            cols="30" 
-                                            rows="10"
-                                            onChange={textInputChangeHandler}
-                                            onBlur={textInputBlurHandler}>
+                                <textarea type="textarea"
+                                    className="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                    onChange={textInputChangeHandler}
+                                    onBlur={textInputBlurHandler}>
                                 </textarea>
+                                {textInputIsvalid && <p className="text-error">Message must not be empty.</p>}
                             </div>
 
                         </div>
                         <div>
-                            <Button type="submit" id="button">Submit</Button>
+                            <Button type="submit" id="button" disabled={!formIsValid}>Submit</Button>
                         </div>
                     </form>
                 </div>
