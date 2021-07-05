@@ -13,7 +13,7 @@
     position: fixed;
     left: 12px;
     top: 270px;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in;
     background-color: #000;
     z-index: 1000;
 }
@@ -65,10 +65,12 @@
     background-color: #000;
     width: 28px;
 }
+
 .twitter:hover {
     transform: translateY(-2px);
     width: 28px;
 }
+
 .github:hover {
     transform: translateY(-2px);
     width: 28px;
@@ -86,41 +88,32 @@
 
     .fixed-left-sm {
         position: fixed;
-        width: 95%;
+        width: 130px;
         height: 50px;
-        margin: 0 auto;
-        top: 95%;
+        top: 90vh;
         border-radius: 10px;
         background-color: #000;
         z-index: 1000;
     }
 
     .linkedin {
-        top: 93.5%;
+        top: 89vh;
         width: 20px;
     }
 
     .twitter {
-        top: 94%;
-        left: 30%;
+        top: 89.4vh;
+        left: 70px;
         width: 20px;
     }
-    
+
     .github {
-        top: 93.5%;
-        left: 55%;
+        top: 89vh;
+        left: 110px;
         width: 20px;
     }
 
     .resume-btn {
-        transform: rotate(0);
-        top: 96%;
-        left: 80%;
-        font-size: 12px;
-    }
-
-    .resume-btn:hover {
-        top: 96%;
-        transform: translateX(2px);
+        display: none;
     }
 }
