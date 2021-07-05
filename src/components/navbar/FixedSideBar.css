@@ -87,33 +87,50 @@
     }
 
     .fixed-left-sm {
-        position: fixed;
-        width: 130px;
+        position: relative;
+        width: 250px;
         height: 50px;
-        top: 90vh;
+        top: 500px;
+        left: 20%;
+
         border-radius: 10px;
         background-color: #000;
         z-index: 1000;
     }
 
     .linkedin {
-        top: 89vh;
+        position: absolute;
+        top: -8px;
+        left: 10px;
         width: 20px;
     }
 
     .twitter {
-        top: 89.4vh;
-        left: 70px;
+        position: absolute;
+        top: -6px;
+        left: 50px;
         width: 20px;
     }
 
     .github {
-        top: 89vh;
-        left: 110px;
+        position: absolute;
+        top: -7px;
+        left: 90px;
         width: 20px;
     }
 
     .resume-btn {
-        display: none;
+        transform: rotate(0);
+        position: absolute;
+        top: 16px;
+        left: 180px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .resume-btn:hover {
+        transform: translateX(-5px);
+        top: 15px;
+        font-size: 14px;
     }
 }

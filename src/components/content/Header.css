@@ -16,3 +16,10 @@
 .hire-btn:hover {
     transform: translateX(2px);
 }
+
+@media(max-width: 819px) { 
+    .hero-image {
+        height: 400px;
+        width: 400px;
+    }
+}
